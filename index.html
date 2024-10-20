@@ -1,99 +1,51 @@
 <!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas Mobile
-    </title>
+    <title>Cara Kerja Jaringan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <style>
-    button {
-      width: 200px;
-      height: 50px;
-      font-size: 25px;
-      align-items: center;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      margin-top: 45px;
+    <h1>Cara Kerja Jaringan</h1>
+    <p>Jaringan adalah kumpulan dari komputer dan perangkat lainnya yang saling terhubung, memungkinkan mereka untuk berkomunikasi dan berbagi informasi. Berikut adalah penjelasan singkat tentang cara kerjanya:</p>
     
-    }
-    body {background-color: black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 800px;
-    }
-    .borderemoji {
-      border: 10px solid #ff06f3;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      padding : 50px;
-      align-items: center;
-      background-color: white;
-      margin-top: 65px;
-  }
-    h1 {color:black;
-    font-size: 100px;
-    position: fixed;
-    margin-top: 20px;
-   
-  }
-  
+    <h2>1. Apa itu Jaringan?</h2>
+    <p>Jaringan pada dasarnya adalah kumpulan dari beberapa jaringan. Ini memungkinkan komputer dari berbagai belahan dunia untuk terhubung dan berkomunikasi satu sama lain. Ini dicapai dengan menggunakan berbagai perangkat keras seperti router, switch, dan server, serta protokol perangkat lunak seperti TCP/IP.</p>
+    
+    <h2>2. Bagaimana Data Bergerak di Jaringan?</h2>
+    <p>Data di jaringan bergerak dalam bentuk paket. Ketika Anda mengirim email atau mengunjungi sebuah situs web, data tersebut dipecah menjadi potongan-potongan kecil yang disebut paket. Paket-paket ini dikirim dari komputer Anda ke tujuan menggunakan serangkaian router dan switch, yang mengarahkan lalu lintas untuk memastikan paket mencapai tujuan yang benar.</p>
+    
+    <h2>3. Peran Penyedia Layanan Internet (ISP)</h2>
+    <p>Penyedia Layanan Internet (ISP) adalah perusahaan yang memberikan Anda akses ke internet. Mereka memiliki jaringan besar server dan infrastruktur yang terhubung ke backbone internet global. Ketika Anda terhubung ke internet, data Anda pertama-tama melewati jaringan ISP Anda sebelum diarahkan ke tujuan akhirnya.</p>
+    
+    <h2>4. Protokol dan Standar</h2>
+    <p>Jaringan mengandalkan serangkaian protokol standar untuk memastikan data dapat ditransmisikan dengan andal dan akurat. Dua protokol yang paling penting adalah Transmission Control Protocol (TCP) dan Internet Protocol (IP), sering disebut bersama sebagai TCP/IP. Protokol ini mendefinisikan cara data harus dipaketkan, dialamatkan, ditransmisikan, diarahkan, dan diterima.</p>
 
-
-</style>
-<body>
-  <div class="borderemoji"></div>
-  <h1 id="emoji">😊</h1>
-
-<button id="tombol" type="button">Pencet disini</button>
-
-<script> 
-  document.addEventListener("DOMContentLoaded", function() {
-  let clickcount=0;
-  const tombol = document.getElementById("tombol");
-  const emoji = document.getElementById("emoji");
-  tombol.addEventListener("click", function(){
-    clickcount++;
-
-    if(clickcount===1){
-      tombol.innerHTML = "aw";
-      emoji.style.display = "none";
-      emoji.style.display = "block";
-      emoji.innerHTML = "😳";
-    }
-
-    else if(clickcount===2){
-      tombol.innerHTML = "udah weh";
-      emoji.style.display = "none";
-      emoji.style.display = "block";
-      emoji.innerHTML = "😑";
-      
-    }
-
-    else{ tombol.innerHTML = "UDAH WOI";
-    emoji.style.display = "none";
-    emoji.style.display = "block";
-    emoji.innerHTML = "😡";
-
-    if (clickcount > 3) {
-      clickcount = 0;
-      tombol.innerHTML = "Pencet disini";
-      emoji.style.display = "none";
-      emoji.style.display = "block";
-      emoji.innerHTML = "😊";
-    }
-
-
-    }
-  });
-});
-
-</script>
+    <h2>Referensi</h2>
+    <ul>
+        <li><a href="https://www.cloudflare.com/learning/network-layer/what-is-the-internet/">Apa itu Internet? - Cloudflare</a></li>
+        <li><a href="https://www.howstuffworks.com/internet/basics/internet.htm">Bagaimana Infrastruktur Internet Bekerja - HowStuffWorks</a></li>
+        <li><a href="https://www.webopedia.com/TERM/I/internet.html">Definisi Internet - Webopedia</a></li>
+    </ul>
 </body>
 </html>
-  
